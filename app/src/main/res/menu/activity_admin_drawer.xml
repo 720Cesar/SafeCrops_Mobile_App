@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_perfil"
+            android:icon="@drawable/icons8_usuario_90"
+            android:title="Perfil" />
+        <item android:id="@+id/nav_item_evaluaciones"
+            android:icon="@drawable/camara"
+            android:title="Camara"/>
+        <item android:title="Gestión de información">
+            <menu>
+                <item android:id="@+id/nav_item_cultivos"
+                    android:icon="@drawable/planta"
+                    android:title="Cultivos"/>
+                <item android:id="@+id/nav_item_enfermedades"
+                    android:icon="@drawable/biorriesgo"
+                    android:title="Enfermedades"/>
+            </menu>
+        </item>
+    </group>
+
+
+    <group>
+        <item android:id="@+id/nav_item_Salir"
+            android:icon="@drawable/salir"
+            android:title="Cerrar sesión" />
+    </group>
+
+</menu>

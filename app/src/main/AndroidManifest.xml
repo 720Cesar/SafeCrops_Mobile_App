@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SafeCrops"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".pruebaPass"
+            android:exported="false" />
+        <activity
+            android:name=".pruebaCalendario"
+            android:exported="false" />
+        <activity
+            android:name=".homeTester"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".elige_subirFoto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".elegirFoto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tomarFoto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actualizarPlaga"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detallePlaga"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nuevaPlaga"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inicioPlagas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".actualizarCultivo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".detalleCultivo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".nuevoCultivo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inicioCultivos"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".homeAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registroTester"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registroExperto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eligeUsuario"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pruebaSubirImg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registro"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.safecrops.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

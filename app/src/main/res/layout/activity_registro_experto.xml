@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_list"
+    tools:context=".registroExperto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/corne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="21dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:text="Experto"
+                    android:textColor="@color/txtVerde"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnBack"
+                    android:layout_width="50dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_toStartOf="@+id/textView"
+                    android:backgroundTint="@color/white"
+                    app:srcCompat="@drawable/vectorback" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/txtNombreExp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gris"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="17dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/txtApellidoPExp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gris"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="17dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_background"
+                android:hint="Apellido paterno" />
+
+            <EditText
+                android:id="@+id/txtApellidoMExp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gris"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="17dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_background"
+                android:hint="Apellido materno" />
+
+
+            <EditText
+                android:id="@+id/txtFechaNacExp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gris"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Fecha de nacimiento (aaaa/mm/dd)"
+                android:paddingStart="17dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="date" />
+
+
+            <EditText
+                android:id="@+id/txtCorreoExp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gris"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingStart="17dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtInstitucion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Gris"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="17dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittext_background"
+                android:hint="Institución perteneciente " />
+
+            <Button
+                android:id="@+id/btnCargaFotoExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/btnNaranja"
+                android:text="CARGAR FOTO DE PERFIL" />
+
+            <Button
+                android:id="@+id/btnGuardarExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/btnAzul"
+                android:text="Guardar" />
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

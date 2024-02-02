@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_list2"
+    tools:context=".nuevaPlaga">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO ENFERMEDAD"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/corne" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieImgCult"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/warning"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/corne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:elevation="21dp"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/txtNombreEnfermedad"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:textSize="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="17dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_background"
+            android:hint="Nombre enfermedad" />
+
+        <EditText
+            android:id="@+id/txtCultivoEnfermedad"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:textSize="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="17dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_background"
+            android:hint="Cultivo en que se presenta" />
+
+
+        <EditText
+            android:id="@+id/txtDescEnfermedad"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:textSize="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="145dp"
+            android:layout_marginBottom="25dp"
+            android:paddingStart="17dp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"
+            android:hint="Descripción" />
+
+        <EditText
+            android:id="@+id/txtCuraEnfermedad"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:textSize="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginBottom="15dp"
+            android:paddingStart="17dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_background"
+            android:hint="Cura" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEnviarEnf"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_bg"
+            android:text="Enviar"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/txtAtrasEnf"
+            android:layout_width="match_parent"
+            android:layout_marginTop="345dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:textColor="@color/RojoClaro"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
