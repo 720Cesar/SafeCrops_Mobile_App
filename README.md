@@ -7,5 +7,9 @@ Las características principales del proyecto son:
 - Clasificador de objetos usando un modelo de TensorFlow Lite.
 - Gestión de información conectado a Internet mediante un host gratuito y bases de datos MySQL.
 
+Uso de la aplicación con un modelo de TensorFlow Lite:
+- El repositorio no cuenta con un modelo de TFL, por lo que para cargarlo se debe realizar en la carpeta "app/src/main/ml/"
+- La adaptación al modelo se realiza en los archivos Java "choose_gallery_photo" y "take_photo"
+
 NOTA 10/10/2024: 
 El servicio de hosting gratuito utilizado por la aplicación ha cesado operaciones, se evalua la manera de cambiar el servicio de hosting para mantener las operaciones activas de la base de datos.
